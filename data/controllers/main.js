@@ -1,4 +1,4 @@
-app.controller("homeCtrl", 
+app.controller("mainCtrl", 
   ["$scope",
   function($scope, $rootScope) {
 

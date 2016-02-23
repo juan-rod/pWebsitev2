@@ -9,8 +9,8 @@ app.config(['$routeProvider',
   function($routeProvider){
     $routeProvider
      .when('/home',{
-        templateUrl : "data/partials/home.html",
-        controller : "homeCtrl"
+        templateUrl : "data/partials/main.html",
+        controller : "mainCtrl"
       })
   
       //  .when('/howBout',{

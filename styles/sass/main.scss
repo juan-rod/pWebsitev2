@@ -5,7 +5,7 @@ body{
 	font-family: $font-stack;
 	background-color:$primary-bg;
 }
-/*.border{
+.border{
 	border: 2px solid white;
 }
 .border2{
@@ -13,25 +13,15 @@ body{
 }
 .border3{
 	border: 2px solid yellow;
-}*/
+}
+.border4{
+	border: 2px solid white;
+}
+.border5{
+	border: 2px solid red;
+}
 img{
 	/*border: 2px solid yellow;*/
-	width:100%;
-	opacity: .4;
+	
 }
-.header{
-	padding:0;
-	height: 228px;
-}
-.ginTitle{
-	font-family:'Bad Script', cursive;
 
-	h1{
-		line-height: 5;
-		font-size: 64px;
-		color: #ddd;
-	}
-}
-.skyline{
-	padding:0;
-}
