@@ -4,9 +4,12 @@ $primary-bg: #13042B;
 body{
 	font-family: $font-stack;
 	background-color:$primary-bg;
+	color: #eee;
 }
+/*//////////////////////////////////////*/
+/*///// borders /////// */
 .border{
-	border: 2px solid white;
+	border: 2px dotted white;
 }
 .border2{
 	border: 2px solid red;
@@ -20,8 +23,82 @@ body{
 .border5{
 	border: 2px solid red;
 }
+/*//////////////////////////////////////*/
+/*///// main.html /////// */
+
+
+
+/*//////////////////////////////////////*/
+/*///// nav-bar.html /////// */
+nav{
+	.nBar{
+		height: 8vh;
+	    min-height: 56px;
+	}
+	.pageTitle{
+		min-height: 56px;
+		h1{
+			margin:0;	
+		}
+
+	}
+	.pageLinks{
+		min-height: 56px;
+		ul {
+		height:50px;
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: transparent;
+		}
+
+		li {
+		    float: right;
+		}
+
+		li a {
+		    display: block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		    font-weight: 100;
+		}
+		li a:hover {
+		    background-color: #111;
+		}
+
+	}
+}
+
+
+/*//////////////////////////////////////*/
+/*///// header.html /////// */
+.header{
+	height: 85vh;
+	min-height: 596px;
+}
+
 img{
 	/*border: 2px solid yellow;*/
 	
 }
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////////*/
+/*///// projectBody.html /////// */
+
+/*//////////////////////////////////////*/
+/*///// moreInfo.html /////// */
+
+/*//////////////////////////////////////*/
+/*///// footer.html /////// */
 
