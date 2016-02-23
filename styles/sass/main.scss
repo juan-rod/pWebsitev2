@@ -1,0 +1,37 @@
+$font-stack:'Lato', sans-serif;
+$primary-bg: #13042B;
+
+body{
+	font-family: $font-stack;
+	background-color:$primary-bg;
+}
+/*.border{
+	border: 2px solid white;
+}
+.border2{
+	border: 2px solid red;
+}
+.border3{
+	border: 2px solid yellow;
+}*/
+img{
+	/*border: 2px solid yellow;*/
+	width:100%;
+	opacity: .4;
+}
+.header{
+	padding:0;
+	height: 228px;
+}
+.ginTitle{
+	font-family:'Bad Script', cursive;
+
+	h1{
+		line-height: 5;
+		font-size: 64px;
+		color: #ddd;
+	}
+}
+.skyline{
+	padding:0;
+}

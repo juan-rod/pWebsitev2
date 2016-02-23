@@ -1,0 +1,33 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #13042B; }
+
+/*.border{
+	border: 2px solid white;
+}
+.border2{
+	border: 2px solid red;
+}
+.border3{
+	border: 2px solid yellow;
+}*/
+img {
+  /*border: 2px solid yellow;*/
+  width: 100%;
+  opacity: .4; }
+
+.header {
+  padding: 0;
+  height: 228px; }
+
+.ginTitle {
+  font-family: 'Bad Script', cursive; }
+  .ginTitle h1 {
+    line-height: 5;
+    font-size: 64px;
+    color: #ddd; }
+
+.skyline {
+  padding: 0; }
+
+/*# sourceMappingURL=main.css.map */
