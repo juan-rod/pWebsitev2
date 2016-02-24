@@ -58,8 +58,17 @@ nav .pageLinks {
   height: 85vh;
   min-height: 596px; }
 
-img {
-  /*border: 2px solid yellow;*/ }
+.infoColumn {
+  height: 100%; }
+  .infoColumn .infoHeader {
+    height: 25%; }
+  .infoColumn .infoBody {
+    height: 50%; }
+
+.imageColumn {
+  height: 100%; }
+  .imageColumn img {
+    height: 100%; }
 
 /*//////////////////////////////////////*/
 /*///// projectBody.html /////// */

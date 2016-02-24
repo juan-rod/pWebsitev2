@@ -80,11 +80,22 @@ nav{
 	min-height: 596px;
 }
 
-img{
-	/*border: 2px solid yellow;*/
-	
-}
+.infoColumn{
+	height: 100%;
+	.infoHeader{
+		height:	25%;
+	}
+	.infoBody{
+		height:50%;
+	}
 
+}
+.imageColumn{
+	height:100%;
+	img{
+		height: 100%;
+	}
+}
 
 
 
