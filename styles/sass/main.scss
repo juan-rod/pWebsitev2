@@ -84,6 +84,7 @@ nav{
 	height: 100%;
 	.infoHeader{
 		height:	25%;
+		margin-top: 10%;
 	}
 	.infoBody{
 		height:50%;
@@ -98,18 +99,57 @@ nav{
 }
 
 
-
-
-
-
-
-
 /*//////////////////////////////////////*/
 /*///// projectBody.html /////// */
+.projectBody{
+	height: 85vh;
+	min-height: 596px;
+
+	.projectInfoColumn{
+		height: 100%;
+
+		.projectInfoTitle{
+			height:	25%;
+			margin-top: 10%;
+		}
+		.projectInfoBody{
+			height:50%;
+		}
+
+	}
+	.projectImageColumn{
+		height:100%;
+		img{
+			height: 100%;
+		}
+	}
+}
+
 
 /*//////////////////////////////////////*/
 /*///// moreInfo.html /////// */
+.moreInfo{
+	height: 85vh;
+	min-height: 596px;
+	
+	.moreInfoCol{
+		height:100%;
 
+		.moreInfoImg{
+			margin-top:10%;
+			height:25%;
+			width: 100%;
+			img{
+				
+				border-radius: 50px;
+			}	
+		}
+		.moreInfoBody{
+			height:50%;
+		}
+	}
+
+}
 /*//////////////////////////////////////*/
 /*///// footer.html /////// */
 

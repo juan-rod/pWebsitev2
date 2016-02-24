@@ -61,7 +61,8 @@ nav .pageLinks {
 .infoColumn {
   height: 100%; }
   .infoColumn .infoHeader {
-    height: 25%; }
+    height: 25%;
+    margin-top: 10%; }
   .infoColumn .infoBody {
     height: 50%; }
 
@@ -72,8 +73,37 @@ nav .pageLinks {
 
 /*//////////////////////////////////////*/
 /*///// projectBody.html /////// */
+.projectBody {
+  height: 85vh;
+  min-height: 596px; }
+  .projectBody .projectInfoColumn {
+    height: 100%; }
+    .projectBody .projectInfoColumn .projectInfoTitle {
+      height: 25%;
+      margin-top: 10%; }
+    .projectBody .projectInfoColumn .projectInfoBody {
+      height: 50%; }
+  .projectBody .projectImageColumn {
+    height: 100%; }
+    .projectBody .projectImageColumn img {
+      height: 100%; }
+
 /*//////////////////////////////////////*/
 /*///// moreInfo.html /////// */
+.moreInfo {
+  height: 85vh;
+  min-height: 596px; }
+  .moreInfo .moreInfoCol {
+    height: 100%; }
+    .moreInfo .moreInfoCol .moreInfoImg {
+      margin-top: 10%;
+      height: 25%;
+      width: 100%; }
+      .moreInfo .moreInfoCol .moreInfoImg img {
+        border-radius: 50px; }
+    .moreInfo .moreInfoCol .moreInfoBody {
+      height: 50%; }
+
 /*//////////////////////////////////////*/
 /*///// footer.html /////// */
 
