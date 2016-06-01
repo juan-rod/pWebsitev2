@@ -1,33 +1,28 @@
 var app = angular.module("webTemp", ['ngRoute','ui.bootstrap']);
 
 
-
-
-
-
 app.config(['$routeProvider',
   function($routeProvider){
     $routeProvider
      .when('/home',{
-        templateUrl : "data/partials/main.html",
         controller : "mainCtrl"
       })
-  
-      //  .when('/howBout',{
-      //   templateUrl : "partials/howBout.html",
-      //   controller : "howBoutCtrl"
-      // })
-      //   .when('/main',{
-      //   templateUrl : "partials/main.html",
-      //   controller : "mainCtrl"
-      // })
-      //   .when('/win',{
-      //   templateUrl : "partials/win.html",
-      //   controller : "winCtrl"
-      // })
-      .otherwise({
-        redirectTo: '/home'
-      });
-   
+    .when('/blog',{
+      templateUrl : "data/partials/nav-views/blog.html",
+      controller: "blogCtrl"
+    })
+    .when('/about',{
+      templateUrl : "data/partials/nav-views/about.html"
+    })
+    .when('/projects',{
+      templateUrl : "data/partials/nav-views/projects.html"
+    })
+    .when('/timeline',{
+      templateUrl : "data/partials/nav-views/timeline.html"
+    })
+    .otherwise({
+      redirectTo: '/home'
+    });
+ 
   }
   ]);

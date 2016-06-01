@@ -108,6 +108,9 @@ nav{
 	.projectInfoColumn{
 		height: 100%;
 
+		img{
+			height: 100%;
+		}
 		.projectInfoTitle{
 			height:	25%;
 			margin-top: 10%;
@@ -117,12 +120,8 @@ nav{
 		}
 
 	}
-	.projectImageColumn{
-		height:100%;
-		img{
-			height: 100%;
-		}
-	}
+	
+	
 }
 
 

@@ -1,7 +1,9 @@
 body {
   font-family: "Lato", sans-serif;
-  background-color: #13042B;
-  color: #eee; }
+  /*background-color: #13042B;*/
+  background-color: grey;
+  color: #eee;
+  height: 100%; }
 
 /*//////////////////////////////////////*/
 /*///// borders /////// */
@@ -74,19 +76,54 @@ nav .pageLinks {
 /*//////////////////////////////////////*/
 /*///// projectBody.html /////// */
 .projectBody {
-  height: 85vh;
+    height: 85vh;
   min-height: 596px; }
-  .projectBody .projectInfoColumn {
+  .projectBody .personalInfoColumn {
     height: 100%; }
-    .projectBody .projectInfoColumn .projectInfoTitle {
-      height: 25%;
+   .projectBody .personalInfoColumn .personalInfoImg {
+      height: 50%;
       margin-top: 10%; }
-    .projectBody .projectInfoColumn .projectInfoBody {
-      height: 50%; }
-  .projectBody .projectImageColumn {
-    height: 100%; }
-    .projectBody .projectImageColumn img {
-      height: 100%; }
+    .projectBody img {
+      height: 250px;
+      width:250px;
+      border-radius: 50%;
+      padding: 0; 
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+     .projectBody .personalInfoColumn .personalInfoBody {
+      height: 25%;
+      text-align: center }
+  .projectBody .mainColumn {
+    height: 100%;
+    padding: 0 50; }
+    .personalInfoBody p {
+      font-size: 1.3em;
+    }
+
+.divBeforeView{
+  margin: auto;
+  height: 100%
+}
+.aboutDiv, .projectsDiv, .blogDiv, .timelineDiv{
+  height: 100%;
+  width:700px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.aboutDiv p {
+  font-size: 1.4em;
+  line-height: 1.8;
+  margin: 25% 0;
+}
 
 /*//////////////////////////////////////*/
 /*///// moreInfo.html /////// */
@@ -106,5 +143,8 @@ nav .pageLinks {
 
 /*//////////////////////////////////////*/
 /*///// footer.html /////// */
+
+
+
 
 /*# sourceMappingURL=main.css.map */

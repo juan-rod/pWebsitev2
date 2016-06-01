@@ -18,9 +18,15 @@
 </head>
 
 <body ng-app="webTemp">
-
+  <div class="container-fluid">
+    <div class="row">
+      <nav-bar></nav-bar>
+      <project-body></project-body>
+      <footer></footer>
+    </div>
+  </div><!-- container fluid-->
 	
-	<div ng-view>
+
 
 
 
@@ -32,6 +38,7 @@
 <script src="lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="data/app/app.js"></script>
 <script src="data/controllers/main.js"></script>
+<script src="data/controllers/blog.js"></script>
 <!-- <script src="data/controllers/projectsCtrl.js"></script> -->
 <script src="data/directives/footer.js"></script>
 <script src="data/directives/header.js"></script>
