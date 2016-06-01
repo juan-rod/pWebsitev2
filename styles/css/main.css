@@ -107,22 +107,8 @@ nav .pageLinks {
 
 .divBeforeView{
   margin: auto;
-  height: 100%
-}
-.aboutDiv, .projectsDiv, .blogDiv, .timelineDiv{
   height: 100%;
-  width:700px;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.aboutDiv p {
-  font-size: 1.4em;
-  line-height: 1.8;
-  margin: 25% 0;
+  overflow:hidden;
 }
 
 /*//////////////////////////////////////*/
@@ -140,6 +126,62 @@ nav .pageLinks {
         border-radius: 50px; }
     .moreInfo .moreInfoCol .moreInfoBody {
       height: 50%; }
+
+
+
+/*//////////////////////////////////////*/
+/*///// partials /////// */
+
+.aboutDiv, .projectsDiv, .blogDiv, .timelineDiv{
+  height: 100%;
+  width:700px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.aboutDiv p {
+  font-size: 1.4em;
+  line-height: 1.8;
+  margin: 25% 0;
+}
+
+.blogDiv{
+  padding: 20 15;
+  overflow-y: scroll;
+}
+.blogCard{
+  height:300px;
+  margin-bottom: 20px;
+}
+.blogTitle{
+  height: 25%;
+}
+.blogDate{
+  height: 25%;
+
+}
+.blogContent{
+height: 75%;
+}
+
+
+
+
+.-webkit-scrollbar {
+display: none;
+}
+
+
+
+
+
+
+
+
+
 
 /*//////////////////////////////////////*/
 /*///// footer.html /////// */
