@@ -31,22 +31,34 @@
 
 
 
+<!-- <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> -->
 <script src="lib/bower_components/angular/angular.min.js"></script>
 <script src="lib/bower_components/angular-route/angular-route.min.js"></script>
 <script src="lib/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="lib/bower_components/firebase/firebase.js"></script>
+<script src="lib/bower_components/angularfire/dist/angularfire.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAsgM3GVrj6tSgCzIDZzeLYaFesxs2MRvM",
+    authDomain: "my-website-blog.firebaseapp.com",
+    databaseURL: "https://my-website-blog.firebaseio.com",
+    storageBucket: "",
+  };
+  firebase.initializeApp(config);
+</script>
+
 <script src="data/app/app.js"></script>
 <script src="data/controllers/main.js"></script>
 <script src="data/controllers/blog.js"></script>
-<!-- <script src="data/controllers/projectsCtrl.js"></script> -->
+<script src="data/controllers/admin-login.js"></script>
+<script src="data/controllers/admin-console.js"></script>
 <script src="data/directives/footer.js"></script>
-<script src="data/directives/header.js"></script>
 <script src="data/directives/moreInfo.js"></script>
 <script src="data/directives/projectBody.js"></script>
 <script src="data/directives/navBar.js"></script>
-<!-- <script src="data/directives/skrollrTag.js"></script>
-<script src="data/service/skrollrService.js"></script> -->
 
 
 </body>

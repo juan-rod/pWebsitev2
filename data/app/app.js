@@ -1,8 +1,12 @@
-var app = angular.module("webTemp", ['ngRoute','ui.bootstrap']);
+var app = angular.module("webTemp", ['ngRoute','ui.bootstrap','firebase']);
 
 
 app.config(['$routeProvider',
   function($routeProvider){
+
+
+
+
     $routeProvider
      .when('/home',{
         controller : "mainCtrl"
@@ -19,6 +23,14 @@ app.config(['$routeProvider',
     })
     .when('/timeline',{
       templateUrl : "data/partials/nav-views/timeline.html"
+    })
+    .when('/admin',{
+      templateUrl : "data/partials/admin/admin-login.html",
+      controller:'adminLoginCtrl'
+    })
+    .when('/adminConsole',{
+      templateUrl : "data/partials/admin/admin-console.html",
+      controller:'adminConsoleCtrl'
     })
     .otherwise({
       redirectTo: '/home'

@@ -1,8 +1,21 @@
 app.controller("blogCtrl", 
   ["$scope",
-  function($scope, $rootScope) {
+  function($scope, $rootScope, $angularfire) {
 
 	console.log( "blog controller loaded!", $scope );
+	var userId = firebase.auth().currentUser.uid;
+	console.log("userId",userId);
+		firebase.database().ref('/blog-posts/').once('value').then(function(snapshot) {
+			  var title = snapshot.val();
+			  console.log("title:",title);
+			  // not working 
+			  
+			  // for(var i = 0; i < title.length; i++){
+			  // 	newTitle = title[i].title;
+			  // console.log("title:",newtitle);
+			  // }
+			  // ...
+			});
 
 	$scope.blog = [
 		{
