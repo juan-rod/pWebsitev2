@@ -1,154 +1,36 @@
-$font-stack:'Lato', sans-serif;
-$primary-bg: #13042B;
-
+@import "partials/admin";
+@import "partials/base";
+@import "partials/nav";
+@import "partials/about";
+@import "partials/timeline";
+@import "partials/blog";
+@import "partials/user";
+@import "partials/projects";
 body{
-	font-family: $font-stack;
-	background-color:$primary-bg;
-	color: #eee;
+	background-color: $bg-color;
+  	font-family: $font-stack, sans-serif;
+  	color: $text-color;
+  	height: 100%; 
+  	overflow: hidden;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 /*//////////////////////////////////////*/
 /*///// borders /////// */
-.border{
-	border: 2px dotted white;
-}
-.border2{
-	border: 2px solid red;
-}
-.border3{
-	border: 2px solid yellow;
-}
-.border4{
-	border: 2px solid white;
-}
-.border5{
-	border: 2px solid red;
-}
-/*//////////////////////////////////////*/
-/*///// main.html /////// */
+.border {
+  border: 2px dotted white; }
 
+.border2 {
+  border: 2px solid red; }
 
+.border3 {
+  border: 2px solid yellow; }
 
-/*//////////////////////////////////////*/
-/*///// nav-bar.html /////// */
-nav{
-	.nBar{
-		height: 8vh;
-	    min-height: 56px;
-	}
-	.pageTitle{
-		min-height: 56px;
-		h1{
-			margin:0;	
-		}
+.border4 {
+  border: 2px solid white; }
 
-	}
-	.pageLinks{
-		min-height: 56px;
-		ul {
-		height:50px;
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    overflow: hidden;
-	    background-color: transparent;
-		}
-
-		li {
-		    float: right;
-		}
-
-		li a {
-		    display: block;
-		    color: white;
-		    text-align: center;
-		    padding: 14px 16px;
-		    text-decoration: none;
-		    font-weight: 100;
-		}
-		li a:hover {
-		    background-color: #111;
-		}
-
-	}
-}
-
-
-/*//////////////////////////////////////*/
-/*///// header.html /////// */
-.header{
-	height: 85vh;
-	min-height: 596px;
-}
-
-.infoColumn{
-	height: 100%;
-	.infoHeader{
-		height:	25%;
-		margin-top: 10%;
-	}
-	.infoBody{
-		height:50%;
-	}
-
-}
-.imageColumn{
-	height:100%;
-	img{
-		height: 100%;
-	}
-}
-
-
-/*//////////////////////////////////////*/
-/*///// projectBody.html /////// */
-.projectBody{
-	height: 85vh;
-	min-height: 596px;
-
-	.projectInfoColumn{
-		height: 100%;
-
-		img{
-			height: 100%;
-		}
-		.projectInfoTitle{
-			height:	25%;
-			margin-top: 10%;
-		}
-		.projectInfoBody{
-			height:50%;
-		}
-
-	}
-	
-	
-}
-
-
-/*//////////////////////////////////////*/
-/*///// moreInfo.html /////// */
-.moreInfo{
-	height: 85vh;
-	min-height: 596px;
-	
-	.moreInfoCol{
-		height:100%;
-
-		.moreInfoImg{
-			margin-top:10%;
-			height:25%;
-			width: 100%;
-			img{
-				
-				border-radius: 50px;
-			}	
-		}
-		.moreInfoBody{
-			height:50%;
-		}
-	}
-
-}
-/*//////////////////////////////////////*/
-/*///// footer.html /////// */
+.border5 {
+  border: 2px solid red; }
 

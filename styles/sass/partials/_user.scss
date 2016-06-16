@@ -1,0 +1,45 @@
+.projectBody {
+    height: 85vh;
+  min-height: 596px; }
+  .projectBody .personalInfoColumn {
+    height: 100%; }
+   .projectBody .personalInfoColumn .personalInfoImg {
+      height: 50%;
+      margin-top: 10%; }
+    .projectBody img {
+      /*height: 250px;*/
+      width:250px;
+      border-radius: 50px;
+      /*padding: 0; */
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+     .projectBody .personalInfoColumn .personalInfoBody {
+      height: 25%;
+      text-align: center }
+  .projectBody .mainColumn {
+    height: 100%;
+    padding: 0 50; }
+    .personalInfoBody p {
+      font-size: 1.3em;
+    }
+
+.divBeforeView{
+  margin: auto;
+  height: 100%;
+  overflow:hidden;
+}
+.aboutDiv, .projectsDiv, .blogDiv, .timelineDiv{
+  height: 100%;
+  width:700px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

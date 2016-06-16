@@ -13,7 +13,7 @@ app.config(['$routeProvider',
       })
     .when('/blog',{
       templateUrl : "data/partials/nav-views/blog.html",
-      controller: "blogCtrl"
+      controller: "mainCtrl"
     })
     .when('/about',{
       templateUrl : "data/partials/nav-views/about.html"

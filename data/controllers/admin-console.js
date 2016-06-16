@@ -18,7 +18,7 @@ $scope.postIt = function(title,blogPost){
   	$scope.title = '';
   	return firebase.database().ref().update(updates);
 
-}
+};
 
 
 

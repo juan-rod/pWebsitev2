@@ -13,7 +13,7 @@ app.controller("adminLoginCtrl",
   			 $location.path( "/admin" );
 		});
 
- 	}
+ 	};
 
 
   } ]);
