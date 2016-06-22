@@ -4,7 +4,7 @@ app.controller("adminLoginCtrl",
  	var auth = $firebaseAuth();
 
  	$scope.signIn =function(email,password){
- 		
+ 		console.log("clikc");
  		auth.$signInWithEmailAndPassword(email, password).then(function(firebaseUser) {
  			 $location.path( "/adminConsole" );
   			console.log("Signed in as:", firebaseUser.uid);

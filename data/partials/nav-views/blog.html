@@ -1,19 +1,30 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogDiv ">
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogCard " ng-repeat="b in blog">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogTitle">
-				<h1>{{b.title}}</h1>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 blogDate">
-				<h4>{{b.date}}</h4>
-			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogContent">
-				<p>{{b.post}}</p>
-			</div>
-			<button class="expand-btn">
-				<span class="glyphicon glyphicon-menu-down"></span>
-			</button>
-		</div>
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-repeat="data in blog">
+		<expand-div customdata="data"></expand-div>
+		
 	</div>
 	  <h1 ng-if="blog.length === 0">( No blogs posted just yet! )</h1>
 </div>
+
+<!-- <div class="cls-content">
+ <div id="viewMoreDataDiv1" class="cls-description-content">
+	 <div style="background-color: #81bd00;color: white; border-radius:2px">
+		 <h3 style="padding: 5px; margin-left: 5px;">
+		 {{customdata.itemTitle}}
+		 </h3>
+	 </div>
+		 <span>
+		 {{customdata.itemDescription}}
+		 </span>
+ </div>
+ 
+ <div id="viewMoreDiv{{customdata.id}}" style="color: #81bd00;">
+ 	<hr style="margin-bottom: 10px;" />
+	 <div id="viewMore{{customdata.id}}">
+	 	<span class="vmbtn" align="center" ng-click="showMore(customdata.id)">View more</span>
+	 </div>
+	 <div id="viewLess{{customdata.id}}" hidden="hidden">
+	 	<span class="vmbtn" align="center" ng-click="showLess(customdata.id)">View less</span>
+	 </div>
+ </div>
+</div> -->

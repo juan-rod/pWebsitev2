@@ -68,7 +68,8 @@ nav .pageLinks {
 
 .blogDiv {
   padding: 20 15;
-  overflow-y: scroll; }
+  overflow-y: scroll; 
+  height: 100%;}
   .blogDiv .blogCard {
     height: 300px;
     margin-bottom: 20px;
@@ -97,7 +98,7 @@ nav .pageLinks {
     line-height: 1.8;
     padding: 30 20;
     font-size: 16px;
-    overflow: hidden; }
+   /* overflow: hidden;*/ }
   .blogDiv .expand-btn {
     position: absolute;
     bottom: 0;
