@@ -13,7 +13,9 @@ $scope.postIt = function(title,blogPost){
 
 	var newPostKey = firebase.database().ref().child('blog').push().key;
 	var updates = {};
+	postData.id = newPostKey;
   	updates['/blog-posts/' + newPostKey] = postData;
+  	
   	$scope.blogPost = '';
   	$scope.title = '';
   	return firebase.database().ref().update(updates);

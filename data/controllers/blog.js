@@ -1,6 +1,6 @@
 app.controller("blogCtrl", ["$scope",function($scope, $angularFire) {
 
- 
+
  //$scope.blog= [{date: "septemer", post: "what is going on?", title: "grrr"}];
 
 

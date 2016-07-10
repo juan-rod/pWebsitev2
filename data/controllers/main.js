@@ -22,7 +22,12 @@ $scope.user = [
 			});
 	}
 
-
+$scope.dropdownBtn = function(){
+	var blogCard = document.getElementById('blogCard');
+	blogCard.className += " MyClass";
+	
+	console.log("blogCard:",blogCard);
+};
 	
 blogData();
  
