@@ -56,9 +56,10 @@ nav .pageLinks {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-weight: 100; }
+        font-weight: 100;
+        border-bottom: none; }
         nav .pageLinks ul li a:hover {
-          font-size: 1.5em; }
+          font-size: 1.1em; }
 
 .aboutDiv p {
   font-size: 1.4em;
@@ -73,7 +74,8 @@ nav .pageLinks {
     height: 300px;
     margin-bottom: 20px;
     background-color: #eee;
-    box-shadow: 0px 5px 44px -20px rgba(0, 0, 0, 0.51); }
+    box-shadow: 0px 5px 44px -20px rgba(0, 0, 0, 0.51);
+    overflow: hidden; }
   .blogDiv .blogTitle {
     height: 32%;
     max-height: 96px;
@@ -95,11 +97,15 @@ nav .pageLinks {
       font-weight: 300;
       text-align: right; }
   .blogDiv .blogContent {
-    height: 68%;
+    height: auto;
     line-height: 1.8;
     padding: 30 20;
     font-size: 16px;
     overflow: hidden; }
+    .blogDiv .blogContent p {
+      height: auto; }
+  .blogDiv .heightAuto {
+    height: auto; }
   .blogDiv .expand-btn {
     position: absolute;
     bottom: 0;
@@ -126,18 +132,6 @@ nav .pageLinks {
   height: 50%;
   margin-top: 10%; }
 
-.projectBody img {
-  /*height: 250px;*/
-  width: 250px;
-  border-radius: 50px;
-  /*padding: 0; */
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
 .projectBody .personalInfoColumn .personalInfoBody {
   height: 25%;
   text-align: center; }
@@ -162,7 +156,69 @@ nav .pageLinks {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  overflow: auto; }
+
+.projectBody .personalInfoImg img {
+  background: transparent;
+  /*opacity: 0;*/
+  height: auto;
+  width: 65%;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
   bottom: 0; }
+  .projectBody .personalInfoImg img:hover {
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 0) 0%, rgba(238, 238, 238, 0.09) 47%, rgba(0, 230, 240, 0.15) 77%, rgba(238, 238, 238, 0.17) 88%, rgba(238, 238, 238, 0.2) 99%, rgba(238, 238, 238, 0.2) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0) 0%, rgba(238, 238, 238, 0.09) 47%, rgba(0, 230, 240, 0.15) 77%, rgba(238, 238, 238, 0.17) 88%, rgba(238, 238, 238, 0.2) 99%, rgba(238, 238, 238, 0.2) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 0) 0%, rgba(238, 238, 238, 0.09) 47%, rgba(0, 230, 240, 0.15) 77%, rgba(238, 238, 238, 0.17) 88%, rgba(238, 238, 238, 0.2) 99%, rgba(238, 238, 238, 0.2) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eeeeee', endColorstr='#33eeeeee',GradientType=0 );
+    /* IE6-9 */
+    transition: opacity 500ms linear; }
+
+.projectsDiv .projectCard {
+  height: auto;
+  padding: 0;
+  margin-bottom: 20px; }
+  .projectsDiv .projectCard .projectImg {
+    height: auto;
+    padding: 0; }
+    .projectsDiv .projectCard .projectImg img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      border-radius: 0;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%); }
+      .projectsDiv .projectCard .projectImg img:hover {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        transition: all 500ms linear; }
+  .projectsDiv .projectCard .projectInfo {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    background: linear-gradient(to top, black 0%, rgba(229, 229, 229, 0) 100%);
+    background: -moz-linear-gradient(to top, black 0%, rgba(229, 229, 229, 0) 100%);
+    background: -webkit-linear-gradient(t0 top, black 0%, rgba(229, 229, 229, 0) 100%);
+    padding: 0 40; }
+    .projectsDiv .projectCard .projectInfo .projectContent {
+      color: #F5F5F5;
+      margin-bottom: 20px; }
+      .projectsDiv .projectCard .projectInfo .projectContent p {
+        font-weight: 300; }
+      .projectsDiv .projectCard .projectInfo .projectContent h5 {
+        font-weight: 300;
+        text-align: justify; }
+  .projectsDiv .projectCard a {
+    text-decoration: none; }
+    .projectsDiv .projectCard a:hover {
+      text-decoration: none !important; }
 
 body {
   background-color: white;
@@ -177,7 +233,7 @@ body {
 /*//////////////////////////////////////*/
 /*///// borders /////// */
 .border {
-  border: 2px dotted white; }
+  border: 2px dotted black; }
 
 .border2 {
   border: 2px solid red; }

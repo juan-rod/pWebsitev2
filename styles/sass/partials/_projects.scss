@@ -1,0 +1,52 @@
+.projectsDiv{
+	.projectCard{
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+		.projectImg{
+			height: auto;
+			padding:0;
+			img{
+			width: 100%;
+			height: auto;
+			position: relative;
+			border-radius: 0;
+			filter: grayscale(100%);
+				-webkit-filter: grayscale(100%);
+				&:hover{
+					filter: grayscale(0%);
+						-webkit-filter: grayscale(0%);
+					transition: all 500ms linear;
+				}
+					
+			}
+		}
+		.projectInfo{
+			position: absolute;
+    		margin: auto;
+    		bottom: 0;
+    		background:$bwtoTopGradient;
+    		background:$bwtoTopGradient-moz;
+    		background:$bwtoTopGradient-webkit;
+    		padding: 0 40;
+
+			.projectContent{
+				color:#F5F5F5;
+				margin-bottom: 20px;
+				p{
+					font-weight: 300;
+				}
+				h5{
+					font-weight: 300;
+					text-align: justify;
+				}
+			}
+		}
+		a{
+			text-decoration: none;
+			&:hover{
+				text-decoration:none !important;
+			}
+		}
+	}
+}

@@ -1,3 +1,20 @@
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border3 projectsDiv">
-	<h1>projects</h1>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 projectsDiv">
+	<div class="projectCard col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-repeat="p in projectContent">
+		<a href="{{p.link}}" target="_blank">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 projectImg">
+				<img ng-src="{{p.Img}}" alt="..." height="100%" width="100%">
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 projectInfo">
+				<div class="row infoRow">
+					<div class="projectContent">
+						<h1>{{p.Name}}</h1>
+						<p>
+							{{p.Skills}}
+						</p>
+						<h5 class="projectDescription">{{p.Description}}</h5>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div> 	
 </div>

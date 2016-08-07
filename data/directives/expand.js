@@ -18,26 +18,15 @@ function expandDiv($timeout,$window){
 
 			scope.showMore = function(){
 				var elementId = attr.id;
-				getBlogDiv = document.getElementById(elementId);
-				getBlogContentDiv = document.getElementById('blogContentDiv');
-				getBlogContentHeight = getBlogContentDiv.offsetHeight;
-				getBlogContentHeightOfP = getBlogDiv.getElementsByTagName('p')[0].offsetHeight;
+				getBlogDiv = angular.element(document.querySelector('#'+ elementId));
 				
+			
 				
-				blogCardHeight = getBlogDiv.offsetHeight;
+				getBlogDiv.toggleClass("heightAuto");
+				// getBlogContentDiv.addClass('heightAuto');
+	
 
-				var whatHeightisThis = blogCardHeight + getBlogContentHeightOfP;
-				var c = getBlogDiv.style;
-				var d = getBlogContentDiv.style;
-				d.height = 'auto';
-				c.height = whatHeightisThis+'px';
-
-				console.log("blogCardHeight:", blogCardHeight);
-				console.log("getBlogContentHeight:", getBlogContentHeight);
-				console.log("getBlogContentHeightOfP:", getBlogContentHeightOfP);
-				console.log("whatHeightisThis:", whatHeightisThis);
-				console.log("c.height:", c.height);
-				console.log("d.height:", d.height);
+			
 			};
 
 			$timeout(function (){
