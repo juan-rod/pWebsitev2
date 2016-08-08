@@ -7,18 +7,20 @@
 			height: auto;
 			padding:0;
 			img{
-			width: 100%;
-			height: auto;
-			position: relative;
-			border-radius: 0;
-			filter: grayscale(100%);
-				-webkit-filter: grayscale(100%);
-				&:hover{
-					filter: grayscale(0%);
-						-webkit-filter: grayscale(0%);
-					transition: all 500ms linear;
-				}
-					
+				width: 100%;
+				height: auto;
+				position: relative;
+				border-radius: 0;
+				background: #136a8a; 
+				background: -webkit-linear-gradient(to bottom, #136a8a , #267871); 
+				background: linear-gradient(to bottom, #136a8a , #267871); 
+				filter: grayscale(100%);
+					-webkit-filter: grayscale(100%);
+					&:hover{
+						filter: grayscale(0%);
+							-webkit-filter: grayscale(0%);
+						transition: all 500ms linear;
+					}
 			}
 		}
 		.projectInfo{

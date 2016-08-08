@@ -67,6 +67,65 @@ nav .pageLinks {
   margin: 25% 0;
   text-align: center; }
 
+.timelineDiv {
+  /*background: #136a8a; 
+  background: -webkit-linear-gradient(to bottom, #136a8a , #267871); 
+  background: linear-gradient(to bottom, #136a8a , #267871); */
+  background: #3a7bd5;
+  background: -webkit-linear-gradient(to bottom, #3a7bd5, #3a6073);
+  background: linear-gradient(to bottom, #3a7bd5, #3a6073);
+  /*background: #2C3E50; 
+  background: -webkit-linear-gradient(to top, #2C3E50 , #4CA1AF); 
+  background: linear-gradient(to top, #2C3E50 , #4CA1AF); */ }
+  .timelineDiv ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 80px 10px;
+    max-width: 470px;
+    text-align: center; }
+    .timelineDiv ul li {
+      color: #FFF; }
+      .timelineDiv ul li .timeline_date {
+        width: 66px;
+        height: 66px;
+        border-radius: 33px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 3px;
+        background-clip: content-box;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        /*color:#136a8a;*/
+        color: #3a7bd5;
+        float: left;
+        margin: 10px 20px 0; }
+        .timelineDiv ul li .timeline_date .timeline_month {
+          margin-top: 11px;
+          display: block;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 1.2; }
+        .timelineDiv ul li .timeline_date .timeline_year {
+          display: block;
+          font-weight: 500;
+          font-size: 15px; }
+      .timelineDiv ul li .timeline_content {
+        padding-top: 6px;
+        text-align: left; }
+        .timelineDiv ul li .timeline_content h2 {
+          font-size: 26px; }
+        .timelineDiv ul li .timeline_content p {
+          font-size: 14px;
+          font-weight: 500;
+          margin: 3px 0 0;
+          opacity: .6; }
+      .timelineDiv ul li:after {
+        content: '';
+        display: block;
+        height: 100px;
+        width: 1px;
+        background: rgba(255, 255, 255, 0.9);
+        margin-left: 53px; }
+
 .blogDiv {
   padding: 20 15;
   overflow-y: scroll; }
@@ -159,27 +218,24 @@ nav .pageLinks {
   bottom: 0;
   overflow: auto; }
 
-.projectBody .personalInfoImg img {
-  background: transparent;
-  /*opacity: 0;*/
-  height: auto;
-  width: 65%;
-  border-radius: 50%;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  .projectBody .personalInfoImg img:hover {
-    background: -moz-linear-gradient(top, rgba(238, 238, 238, 0) 0%, rgba(238, 238, 238, 0.09) 47%, rgba(0, 230, 240, 0.15) 77%, rgba(238, 238, 238, 0.17) 88%, rgba(238, 238, 238, 0.2) 99%, rgba(238, 238, 238, 0.2) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0) 0%, rgba(238, 238, 238, 0.09) 47%, rgba(0, 230, 240, 0.15) 77%, rgba(238, 238, 238, 0.17) 88%, rgba(238, 238, 238, 0.2) 99%, rgba(238, 238, 238, 0.2) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(238, 238, 238, 0) 0%, rgba(238, 238, 238, 0.09) 47%, rgba(0, 230, 240, 0.15) 77%, rgba(238, 238, 238, 0.17) 88%, rgba(238, 238, 238, 0.2) 99%, rgba(238, 238, 238, 0.2) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eeeeee', endColorstr='#33eeeeee',GradientType=0 );
-    /* IE6-9 */
-    transition: opacity 500ms linear; }
+.projectBody .personalInfoImg {
+  overflow: hidden; }
+  .projectBody .personalInfoImg img {
+    background: transparent;
+    /*opacity: 0;*/
+    height: auto;
+    width: 65%;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 350;
+    transition: top 500ms linear; }
+    .projectBody .personalInfoImg img:hover {
+      top: 80;
+      transition: all 500ms linear; }
 
 .projectsDiv .projectCard {
   height: auto;
@@ -193,6 +249,9 @@ nav .pageLinks {
       height: auto;
       position: relative;
       border-radius: 0;
+      background: #136a8a;
+      background: -webkit-linear-gradient(to bottom, #136a8a, #267871);
+      background: linear-gradient(to bottom, #136a8a, #267871);
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%); }
       .projectsDiv .projectCard .projectImg img:hover {

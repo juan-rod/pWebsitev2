@@ -32,6 +32,13 @@ $scope.dropdownBtn = function(){
 
   	$scope.projectContent = [
   			{ 
+  				Name: "rReports",
+  				Skills: "AngularJS, Bootstrap",
+  				Description: "rReports, a mock website design, showcases a product description page. The main feature is the carousel-like display of product information. ",
+  				Img: "data/images/rreports.png",
+          		link: "http://rreports.juanrod.co"
+  			},
+  			{ 
   				Name: "uPick",
   				Skills: "AngularJS, Bootstrap, Google Maps API",
   				Description: "uPick, a mobile-friendly web application, is a solution for my personal struggle to pick a restaurant. With the implementation of geolocation, a number of local restaurants populate on the screen. With a click of a button, a restaurant of your choice is randomly choosen.",
