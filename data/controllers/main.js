@@ -5,11 +5,15 @@ app.controller("mainCtrl",
 $scope.user = [
 	{
 		name:"Juan Rodriguez",
-		title:"Software Developer at DCR POS Systems",
-		location:"Nashville"
+		title:"Software Developer",
+		location:"Austin"
 	}
 ];
-
+$scope.activeNav = function(){
+  var li = angular.element(document.querySelector("a"));
+  li.addClass("active");
+  console.log("finding li:", li);
+};
 	function blogData(){ 
 		var query = firebase.database().ref("/blog-posts/").orderByKey();
 			query.once("value").then(function(snapshot) {

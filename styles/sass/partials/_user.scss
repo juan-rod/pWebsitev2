@@ -37,6 +37,17 @@
   overflow: auto;
 }
 .projectBody{
+  .personalInfoBody{
+    .user-title{
+      letter-spacing: 1.8px;
+      opacity: 0.6;
+      line-height: 1.2px;
+    }
+    .user-location{
+      opacity: 0.6;
+      font-size: 1.1em;
+    }
+  }
   .personalInfoImg{
     overflow: hidden;
       img {

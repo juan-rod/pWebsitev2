@@ -9,19 +9,24 @@ function expandDiv($timeout,$window){
 	}
 
 	function link(scope,element,attr){
-		var getBlogDiv,
-			getBlogContentDiv,
-			blogCardHeight,
-			getBlogContentHeight,
-			getBlogContentHeightOfP;
-	
-
+		var getBlogDiv;
 			scope.showMore = function(){
 				var elementId = attr.id;
 				getBlogDiv = angular.element(document.querySelector('#'+ elementId));
+				getGlyphiconId = angular.element(document.querySelector('#menu-up-down'));
+				// console.log("getGlyphiconId:",getGlyphiconId);
+				// console.log("getBlogDiv:",getBlogDiv);
+
+			// 	getGlyphiconId.removeClass('glyphicon-menu-down');
+			// 	getGlyphiconId.addClass('glyphicon-menu-up');	
+			// if(getGlyphiconId.hasClass('glyphicon-menu-down') ===true){
 				
-			
-				
+			// }else{
+			// 	getGlyphiconId.removeClass('glyphicon-menu-up');
+			// 	getGlyphiconId.addClass('glyphicon-menu-down');
+
+			// }
+
 				getBlogDiv.toggleClass("heightAuto");
 				// getBlogContentDiv.addClass('heightAuto');
 	

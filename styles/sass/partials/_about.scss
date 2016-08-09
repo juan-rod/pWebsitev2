@@ -1,7 +1,35 @@
-.aboutDiv p {
-  font-size: 1.4em;
-  line-height: 1.8;
-  margin: 25% 0;
-  text-align: center;
+.aboutDiv {
+	padding: 10% 12%;
+    text-align: left;
+    color: #222;
+
+/*background: #8e9eab; 
+background: -webkit-linear-gradient(to bottom, #8e9eab , #eef2f3); 
+background: linear-gradient(to bottom, #8e9eab , #eef2f3);*/
+        
+        
+	p {
+	  font-size: 1.4em;
+	  line-height: 1.8;
+	  /*margin: 15% 0;*/
+	  text-align: justify;
+	}
+	.signature{
+		/*opacity: 0.6;*/
+		margin-top: 35px;
+	}
+	a{
+		text-decoration: none;
+		color:inherit;
+		opacity: 0.6;
+
+		&:hover{
+			text-decoration: none;
+			cursor: pointer;
+			opacity: 0.8;
+		}
+	}
+
+	
 }
 

@@ -57,15 +57,39 @@ nav .pageLinks {
         padding: 14px 16px;
         text-decoration: none;
         font-weight: 100;
-        border-bottom: none; }
+        border-bottom: none;
+        /*&:active{
+          color:pink;
+        }
+        &:visited{
+          color:pink;
+        }*/ }
         nav .pageLinks ul li a:hover {
           font-size: 1.1em; }
 
-.aboutDiv p {
-  font-size: 1.4em;
-  line-height: 1.8;
-  margin: 25% 0;
-  text-align: center; }
+.aboutDiv {
+  padding: 10% 12%;
+  text-align: left;
+  color: #222;
+  /*background: #8e9eab; 
+  background: -webkit-linear-gradient(to bottom, #8e9eab , #eef2f3); 
+  background: linear-gradient(to bottom, #8e9eab , #eef2f3);*/ }
+  .aboutDiv p {
+    font-size: 1.4em;
+    line-height: 1.8;
+    /*margin: 15% 0;*/
+    text-align: justify; }
+  .aboutDiv .signature {
+    /*opacity: 0.6;*/
+    margin-top: 35px; }
+  .aboutDiv a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.6; }
+    .aboutDiv a:hover {
+      text-decoration: none;
+      cursor: pointer;
+      opacity: 0.8; }
 
 .timelineDiv {
   /*background: #136a8a; 
@@ -118,6 +142,9 @@ nav .pageLinks {
           font-weight: 500;
           margin: 3px 0 0;
           opacity: .6; }
+      .timelineDiv ul li:nth-last-child(1):after {
+        content: '';
+        display: none; }
       .timelineDiv ul li:after {
         content: '';
         display: block;
@@ -134,7 +161,8 @@ nav .pageLinks {
     margin-bottom: 20px;
     background-color: #eee;
     box-shadow: 0px 5px 44px -20px rgba(0, 0, 0, 0.51);
-    overflow: hidden; }
+    overflow: hidden;
+    transition: height 500ms linear; }
   .blogDiv .blogTitle {
     height: 32%;
     max-height: 96px;
@@ -164,7 +192,8 @@ nav .pageLinks {
     .blogDiv .blogContent p {
       height: auto; }
   .blogDiv .heightAuto {
-    height: auto; }
+    height: auto;
+    transition: height 500ms linear; }
   .blogDiv .expand-btn {
     position: absolute;
     bottom: 0;
@@ -221,6 +250,13 @@ nav .pageLinks {
   bottom: 0;
   overflow: auto; }
 
+.projectBody .personalInfoBody .user-title {
+  letter-spacing: 1.8px;
+  opacity: 0.6;
+  line-height: 1.2px; }
+.projectBody .personalInfoBody .user-location {
+  opacity: 0.6;
+  font-size: 1.1em; }
 .projectBody .personalInfoImg {
   overflow: hidden; }
   .projectBody .personalInfoImg img {
@@ -281,6 +317,15 @@ nav .pageLinks {
     text-decoration: none; }
     .projectsDiv .projectCard a:hover {
       text-decoration: none !important; }
+
+.footer {
+  text-align: center;
+  font-size: 1.3em;
+  opacity: .4; }
+  .footer a {
+    color: #222; }
+  .footer span {
+    margin: 0 5px; }
 
 body {
   background-color: white;

@@ -62,6 +62,10 @@ background: linear-gradient(to top, #2C3E50 , #4CA1AF); */
 				    opacity: .6;
 				}
 			}
+			&:nth-last-child(1):after{
+				content:'';
+				display:none;
+			};
 			&:after{
 				content: '';
 			    display: block;

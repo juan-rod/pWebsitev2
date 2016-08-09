@@ -8,6 +8,8 @@
 	  background-color: #eee;
 	  box-shadow: 0px 5px 44px -20px rgba(0, 0, 0, 0.51);
 	  overflow: hidden;
+	  transition: height 500ms linear;
+
 	}
 	.blogTitle{
 	  height: 32%;
@@ -46,6 +48,7 @@
 	}
 	.heightAuto{
 		height: auto;
+		transition: height 500ms linear;
 	}
 	.expand-btn{
 		position: absolute;
