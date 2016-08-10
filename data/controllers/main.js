@@ -9,11 +9,11 @@ $scope.user = [
 		location:"Austin"
 	}
 ];
-$scope.activeNav = function(){
-  var li = angular.element(document.querySelector("a"));
-  li.addClass("active");
-  console.log("finding li:", li);
-};
+// $scope.activeNav = function(){
+//   var li = angular.element(document.querySelector("a"));
+//   li.addClass("active");
+//   console.log("finding li:", li);
+// };
 	function blogData(){ 
 		var query = firebase.database().ref("/blog-posts/").orderByKey();
 			query.once("value").then(function(snapshot) {
