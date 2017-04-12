@@ -21,6 +21,7 @@ $scope.user = [
 			    snapshot.forEach(function(childSnapshot) {
 			     	var dataFromBlog = childSnapshot.val();
 			     	 $scope.blog.push(dataFromBlog);
+             console.log("$scope.blog",$scope.blog);
 			  	});
 			  	return $scope.blog;	
 			});
