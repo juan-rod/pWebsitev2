@@ -18,6 +18,9 @@ app.config(['$routeProvider',
     .when('/about',{
       templateUrl : "data/partials/nav-views/about.html"
     })
+    .when('/now',{
+      templateUrl : "data/partials/nav-views/now.html"
+    })
     .when('/projects',{
       templateUrl : "data/partials/nav-views/projects.html"
     })

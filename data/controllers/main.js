@@ -5,7 +5,7 @@ app.controller("mainCtrl",
 $scope.user = [
 	{
 		name:"Juan Rodriguez",
-		title:"Software Developer",
+		title:"Front End Developer",
 		location:"Austin"
 	}
 ];
